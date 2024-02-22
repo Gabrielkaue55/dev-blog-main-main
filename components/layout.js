@@ -4,8 +4,8 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = 'Josias Leal';
-export const siteTitle = 'Dev Blog - Josias';
+const name = 'Gabriel Kaue';
+export const siteTitle = 'Blog impactos da IA em ambiente escolar';
 
 export default function Layout({ children, home }) {
   return (
@@ -61,7 +61,7 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
+          <Link href="/">← Pagina Principal</Link>
         </div>
       )}
     </div>
