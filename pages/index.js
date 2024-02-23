@@ -27,8 +27,8 @@ export default function Home({ allPostsData }) {
         <p>
         Junte-se a nós nesta jornada fascinante enquanto exploramos os impactos da IA no ambiente escolar e discutimos como podemos 
         aproveitar ao máximo essa tecnologia para promover um aprendizado mais eficaz e inclusivo para todos.
-          If you want to see more tech content, this is my <a href="">YouTube Channel </a>
-          and this is my <a href="">Github</a>
+          se quiser acompanhar mais dos nossos conteudos, esse é meu <a href="">YouTube Channel </a>
+          meu <a href="">Github</a>
         </p>
       </section>
 
