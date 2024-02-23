@@ -4,7 +4,7 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = 'Gabriel Kaue';
+const name = 'TCC IMPACTOS DA INTELIGENCIA ARTIFICIAL EM AMBIENTE ESCOLAR';
 export const siteTitle = 'Blog impactos da IA em ambiente escolar';
 
 export default function Layout({ children, home }) {
