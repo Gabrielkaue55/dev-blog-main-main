@@ -25,9 +25,8 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hello, my name is Josias Leal. I'm a fullstack developer and I'm passionate about learning new things.
-          Currently I'm working with VueJS, React, React Native and Java, and I hope I can bring some knowledge for you
-          through this Blog.
+        Junte-se a nós nesta jornada fascinante enquanto exploramos os impactos da IA no ambiente escolar e discutimos como podemos 
+        aproveitar ao máximo essa tecnologia para promover um aprendizado mais eficaz e inclusivo para todos.
           If you want to see more tech content, this is my <a href="">YouTube Channel </a>
           and this is my <a href="">Github</a>
         </p>
