@@ -30,7 +30,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/https://blog.digitalcook.fr/wp-content/uploads/2021/01/Intelligence-artificielle.jpg"
+              src="/images/profile.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
