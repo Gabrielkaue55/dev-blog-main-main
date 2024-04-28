@@ -1,17 +1,30 @@
+import { faBook } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import { useState } from 'react';
+import { IoCloseOutline } from "react-icons/io5";
+import { RxHamburgerMenu } from "react-icons/rx";
+import utilStyles from '../styles/utils.module.css';
+import styles from './layout.module.css';
 
 const name = 'TCC IMPACTOS DA INTELIGENCIA ARTIFICIAL EM AMBIENTE ESCOLAR';
 export const siteTitle = 'Blog impactos da IA em ambiente escolar';
 
 export default function Layout({ children, home }) {
+
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleMenuClick = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
-    <div className={styles.container}>
+    <div >
       <Head>
         <link rel="icon" href="/favicon.ico" />
+
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -25,45 +38,108 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
-        {home ? (
-          <>
+
+      <header className={styles.headerNav}>
+        <div className={styles.divNav}>
+          <Link href="/" className={styles.logo}>
             <Image
               priority
-              src="/images/profile.jpg"
+              src="/images/Logo.png"
               className={utilStyles.borderCircle}
-              height={144}
-              width={144}
+              height={108}
+              width={108}
               alt=""
+
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
+            <h1>Blog</h1>
+          </Link>
+
+          <nav className={styles.nav}>
             <Link href="/">
+              Home
+            </Link>
+            <Link href="/">
+              <>Blog</>
+            </Link>
+            <Link href="https://drive.google.com/file/d/1-5xRBPLKMpp5jLJ3c-QJsJn8jK0MbN1A/view?usp=sharing">
+              <>Diário</>
+            </Link>
+          </nav>
+
+          <div className={styles.socialMedia}>
+            <Link href="https://drive.google.com/file/d/1-5xRBPLKMpp5jLJ3c-QJsJn8jK0MbN1A/view?usp=sharing">
+              <FontAwesomeIcon icon={faBook} />
+            </Link>
+          </div>
+
+        </div>
+
+        <div>
+          <div className={styles.menu} onClick={handleMenuClick}>
+            {isMobileMenuOpen ? <><IoCloseOutline />
+            </> : <><RxHamburgerMenu />
+            </>}
+          </div>
+
+          <div className={`${styles.mobile} ${isMobileMenuOpen ? styles.open : ''}`}>
+            <div>------</div>
+            <div className={styles.menu} onClick={handleMenuClick}>
+              {isMobileMenuOpen ? <><IoCloseOutline />
+              </> : <><RxHamburgerMenu />
+              </>}
+            </div>
+            <div>------</div>
+
+            <Link href="/">Home</Link>
+            <Link href="/"><>Blog</></Link>
+            <Link href="https://drive.google.com/file/d/1-5xRBPLKMpp5jLJ3c-QJsJn8jK0MbN1A/view?usp=sharing"><>Diário</></Link>
+          </div>
+        </div>
+
+      </header >
+
+      <div className={styles.container}>
+
+        <header className={styles.header}>
+          {home ? (
+            <>
               <Image
                 priority
-                src="/images/profile.jpg"
+                src="/images/capa.jpeg"
                 className={utilStyles.borderCircle}
-                height={108}
-                width={108}
+                height={1280}
+                width={720}
                 alt=""
               />
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.colorInherit}>
-                {name}
-              </Link>
-            </h2>
-          </>
+              <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            </>
+          ) : (
+            <>
+
+              <Image
+                priority
+                src="/images/capa2.jpeg"
+                className={utilStyles.borderCircle}
+                height={1280}
+                width={720}
+                alt=""
+              />
+
+              <h2 className={utilStyles.headingLg}>
+                <Link href="/" className={utilStyles.colorInherit}>
+                  {name}
+                </Link>
+              </h2>
+            </>
+          )}
+        </header>
+        <main>{children}</main>
+        {!home && (
+          <div className={styles.backToHome}>
+            <Link href="/">← Pagina Principal</Link>
+          </div>
         )}
-      </header>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">← Pagina Principal</Link>
-        </div>
-      )}
-    </div>
+      </div>
+    </div >
   );
 }
