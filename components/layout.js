@@ -105,7 +105,7 @@ export default function Layout({ children, home }) {
             <>
               <Image
                 priority
-                src="/images/capa.jpeg"
+                src="/images/capa.jpg"
                 className={utilStyles.borderCircle}
                 height={1280}
                 width={720}
