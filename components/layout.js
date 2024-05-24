@@ -61,13 +61,13 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <>Blog</>
             </Link>
-            <Link href="https://drive.google.com/file/d/1-5xRBPLKMpp5jLJ3c-QJsJn8jK0MbN1A/view?usp=sharing">
+            <Link href="https://drive.google.com/file/d/1S4DHuY0m69zwlhVX6uL_bylQltZtyGPE/view?usp=sharing">
               <>Diário</>
             </Link>
           </nav>
 
           <div className={styles.socialMedia}>
-            <Link href="https://drive.google.com/file/d/1-5xRBPLKMpp5jLJ3c-QJsJn8jK0MbN1A/view?usp=sharing">
+            <Link href="https://drive.google.com/file/d/1S4DHuY0m69zwlhVX6uL_bylQltZtyGPE/view?usp=sharing">
               <FontAwesomeIcon icon={faBook} />
             </Link>
           </div>
@@ -92,7 +92,7 @@ export default function Layout({ children, home }) {
 
             <Link href="/">Home</Link>
             <Link href="/"><>Blog</></Link>
-            <Link href="https://drive.google.com/file/d/1-5xRBPLKMpp5jLJ3c-QJsJn8jK0MbN1A/view?usp=sharing"><>Diário</></Link>
+            <Link href="https://drive.google.com/file/d/1S4DHuY0m69zwlhVX6uL_bylQltZtyGPE/view?usp=sharing"><>Diário</></Link>
           </div>
         </div>
 
