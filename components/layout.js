@@ -9,7 +9,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import utilStyles from '../styles/utils.module.css';
 import styles from './layout.module.css';
 
-const name = 'TCC IMPACTOS DA INTELIGENCIA ARTIFICIAL EM AMBIENTE ESCOLAR';
+const name = ' COMO A INTELIGÊNCIA ARTIFICIAL INTERFERE NA EDUCAÇÃO DO ENSINO MÉDIO ';
 export const siteTitle = 'Blog impactos da IA em ambiente escolar';
 
 export default function Layout({ children, home }) {
