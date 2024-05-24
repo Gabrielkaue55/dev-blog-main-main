@@ -10,7 +10,7 @@ import utilStyles from '../styles/utils.module.css';
 import styles from './layout.module.css';
 
 const name = ' COMO A INTELIGÊNCIA ARTIFICIAL INTERFERE NA EDUCAÇÃO DO ENSINO MÉDIO ';
-export const siteTitle = 'Blog impactos da IA em ambiente escolar';
+export const siteTitle = 'Blog como a IA interfere na educação do ensino médio';
 
 export default function Layout({ children, home }) {
 
