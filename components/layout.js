@@ -9,8 +9,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import utilStyles from '../styles/utils.module.css';
 import styles from './layout.module.css';
 
-const name = ' COMO A INTELIGÊNCIA ARTIFICIAL INTERFERE NA EDUCAÇÃO DO ENSINO MÉDIO ';
-export const siteTitle = 'Blog como a IA interfere na educação do ensino médio';
+const name = ' INFLUÊNCIA DA INTELIGÊNCIA ARTIFICIAL NO ENSINO MÉDIO: ESTUDO DE CASO NA ESCOLA ARY DE OLIVEIRA GARCIA ';
+export const siteTitle = 'Blog INFLUÊNCIA DA INTELIGÊNCIA ARTIFICIAL NO ENSINO MÉDIO: ESTUDO DE CASO NA ESCOLA ARY DE OLIVEIRA GARCIA';
 
 export default function Layout({ children, home }) {
 
