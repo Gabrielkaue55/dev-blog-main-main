@@ -25,7 +25,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Junte-se a nós nesta jornada fascinante enquanto exploramos os impactos da Inteligência Artificial no ambiente escolar. Vamos discutir como podemos aproveitar ao máximo essa tecnologia para promover um aprendizado mais eficaz e inclusivo para todos. Se quiser acompanhar mais dos nossos conteúdos, fique à vontade!
+        Você já se questionou sobre o quanto a inteligência artificial está modificando o aprendizado e quais serão as consequências no futuro?  Vamos debater como essa tecnologia pode ser melhor explorada e incluída na educação de Ensino Médio, tendo como ambiente de pesquisa a Escola Estadual Ary de Oliveira Garcia.
         </p>
       </section>
 
